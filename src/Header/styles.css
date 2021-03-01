@@ -1,0 +1,11 @@
+header {
+  text-align: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-family: "Pacifico";
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
