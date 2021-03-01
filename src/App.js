@@ -1,7 +1,11 @@
+import Header from "./Header/header";
+import ImageGrid from "./ImageGrid/ImageGrid";
+
 const App = () => {
   return (
-    <div className="container mt-4">
-      <h1>Hello from react App</h1>
+    <div>
+      <Header />
+      <ImageGrid />
     </div>
   );
 };
