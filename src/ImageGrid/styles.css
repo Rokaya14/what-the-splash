@@ -53,3 +53,10 @@ img {
 .item {
   position: relative;
 }
+.btn {
+  font-size: 18px;
+  border-width: 0.15rem;
+}
+.btn:hover {
+  color: aliceblue !important;
+}
