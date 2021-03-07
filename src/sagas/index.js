@@ -1,11 +1,11 @@
 import { takeEvery } from "redux-saga/effects";
+import { IMAGES } from "../constants";
 
 function* worker() {
-  console.log("hello saga Worker ^^ ");
+  console.log("Loading images !");
 }
 
 function* rootSaga() {
-  yield takeEvery("hello", worker);
-  console.log("hello saga ^^ ");
+  yield takeEvery(IMAGES.LOAD, worker);
 }
 export default rootSaga;
