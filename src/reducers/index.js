@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import errorReducer from "./errorReducer";
-import imageReducer from "./imagesreducer";
+import imageReducer from "./imagesReducer";
 import loadImagesReducer from "./loadImagesReducer";
 
 const rootReducer = combineReducers({
@@ -8,4 +8,11 @@ const rootReducer = combineReducers({
   images: imageReducer,
   error: errorReducer,
 });
+
+/*  state {
+      isLoading : false ,
+      images : [] ,
+      error : null
+    }
+*/
 export default rootReducer;
