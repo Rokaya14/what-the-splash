@@ -13,6 +13,4 @@ const store = createStore(
 );
 sagaMiddleware.run(rootSaga);
 
-store.dispatch({ type: "hello" });
-
 export default store;
