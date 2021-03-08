@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { loadImages } from "../actions/actions";
 import "./styles.css";
-//const key = "5f96323678d05ff0c4eb264ef184556868e303b32a2db88ecbf15746e6f25e02";
 
 const ImageGrid = (props) => {
-  // const [images, setImages] = useState([]);
-  // useEffect(() => {
-  //   fetch(`https://api.unsplash.com/photos/?client_id=${key}&per_page=28`)
-  //     .then((response) => response.json())
-  //     .then((images) => setImages(images));
-  // });
+  useEffect(() => {
+    props.loadImages();
+  }, [1]);
+
   const { images } = props;
   return (
     <div className="content">
